@@ -163,7 +163,7 @@ const pokeList = [
       <img class="icon" src="${pokemon.img}" alt="${pokemon.name}">
       <p>${pokemon.id}-${pokemon.name}</p>
       <img class="type" src="${pokemon.typeImg}" alt="${pokemon.type}">
-      <button>${pokemon.button}</button>
+      <button class="info">${pokemon.button}</button>
     `;
     container.appendChild(div);
 
@@ -183,12 +183,13 @@ const pokeList = [
               <img class="icon" src="${pokemon.img}" alt="${pokemon.name}">
               <p>${pokemon.id}-${pokemon.name}</p>
               <img class="type" src="${pokemon.typeImg}" alt="${pokemon.type}">
-              <button>${pokemon.button}</button>
+              <button class="info">${pokemon.button}</button>
             `;
             resultsContainer.appendChild(div);
           }
         });
       }
+      
       
   });
   
