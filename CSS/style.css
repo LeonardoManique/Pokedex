@@ -11,6 +11,7 @@
 :root{
   --color-primary: #292929;
   --color-secundary: #6b6b6b;
+  --color-ter: #131313;
   --color-black: #000000;
   --color-white: #ffffff;
 }
@@ -20,20 +21,49 @@ body{
 }
 
 .container{
-    display: flex;
+    display: contents;
+    flex-direction: row;
     width: 80%;
+    margin-left: 200px;
     align-items: center;
     border: solid 2px var(--color-secundary);
 }
 
 .pokemon{
-    height: 300px;
+    height: 320px;
     width: 250px;
+    margin: 10px;
     border: solid 2px var(--color-black);
+    border-radius: 10px;
     background-color: var(--color-secundary);
     color: var(--color-white);
     text-align: center;
     align-items: center;
-    display: ;
+   display: inline-block;
 }
-    
+
+.pokemon .type {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.pokemon .type img {
+    max-width: 50px;
+    height: auto;
+    margin: 2px;
+}
+
+.type{
+    height: 20px;
+    width: 55px;
+    margin-left: 94px;
+}
+
+.icon{
+    background-color: var(--color-primary);
+    border-radius: 10px;
+    margin-top: 10px;
+}
