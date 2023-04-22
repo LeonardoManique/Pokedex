@@ -166,5 +166,29 @@ const pokeList = [
       <button>${pokemon.button}</button>
     `;
     container.appendChild(div);
+
+
+    const searchButton = document.getElementById("search-button");
+    searchButton.addEventListener("click", search);
+    function search() {
+        const searchTerm = document.getElementById("search-input").value.toLowerCase();
+        const resultsContainer = document.getElementById("search-results");
+        resultsContainer.innerHTML = "";
+      
+        pokeList.forEach(pokemon => {
+          if (pokemon.name.toLowerCase().includes(searchTerm)) {
+            const div = document.createElement("div");
+            div.classList.add("pokemon");
+            div.innerHTML = `
+              <img class="icon" src="${pokemon.img}" alt="${pokemon.name}">
+              <p>${pokemon.id}-${pokemon.name}</p>
+              <img class="type" src="${pokemon.typeImg}" alt="${pokemon.type}">
+              <button>${pokemon.button}</button>
+            `;
+            resultsContainer.appendChild(div);
+          }
+        });
+      }
+      
   });
   

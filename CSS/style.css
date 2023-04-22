@@ -20,6 +20,10 @@ body{
     background-color: var(--color-primary);   
 }
 
+main{
+    margin-top: 400px;
+}
+
 .container{
     display: contents;
     flex-direction: row;
@@ -67,3 +71,29 @@ body{
     border-radius: 10px;
     margin-top: 10px;
 }
+
+#search-input {
+    margin: 50px 0 0 808px ;
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid var(--color-white);
+    border-radius: 10px 0 0 10px;
+  }
+  
+  #search-button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: var(--color-secundary);
+    color: var(--color-white);
+    border: none;
+    cursor: pointer;
+    border-radius: 0 10px 10px 0;
+  }
+  
+  #search-results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+  }
