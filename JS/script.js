@@ -166,6 +166,7 @@ const pokeList = [
       <button class="info">${pokemon.button}</button>
     `;
     container.appendChild(div);
+    
 
 
     const searchButton = document.getElementById("search-button");
@@ -189,7 +190,13 @@ const pokeList = [
           }
         });
       }
+      const backToTopButton = document.getElementById("back-to-top");
+      backToTopButton.addEventListener("click", scrollToTop);
       
+      function scrollToTop() {
+        window.scrollTo(0, 0);
+      }
+        
       
   });
   

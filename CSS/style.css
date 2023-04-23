@@ -39,7 +39,7 @@ main{
     margin: 10px;
     border: solid 2px var(--color-black);
     border-radius: 10px;
-    background-color: var(--color-secundary);
+    background-image: linear-gradient(to bottom, rgb(255, 0, 0), rgb(196, 21, 21),rgb(179, 36, 36),rgb(163, 37, 37));
     color: var(--color-white);
     text-align: center;
     align-items: center;
@@ -67,8 +67,9 @@ main{
 }
 
 .icon{
-    background-color: var(--color-primary);
+    background-image: linear-gradient(to bottom, rgb(196, 176, 176), rgb(128, 117, 117),rgb(104, 98, 98),rgb(71, 67, 67));
     border-radius: 10px;
+    border: solid 4px var(--color-black);
     margin-top: 10px;
 }
 
@@ -81,9 +82,28 @@ main{
     margin-top: 8px;
 }
 
+.inicio{
+    position: fixed;
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px;
+    border-color: var(--color-black);
+    opacity: 0.5;
+    margin-left: 600px;
+    margin-top: 15px;
+}
+
+.dex {
+    width: 300px;
+    height: 200px;
+    margin-left: 808px;
+
+}
+
 
 #search-input {
-    margin: 50px 0 0 808px ;
+    margin: -5px 0 0 808px ;
     width: 200px;
     padding: 10px;
     font-size: 16px;
